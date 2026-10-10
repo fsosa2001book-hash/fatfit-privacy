@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Política de privacidad y términos de uso de FatFit.">
+<meta name="theme-color" content="#101110">
+<title>Privacidad y términos | FatFit</title>
+
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #101110;
+  --card: #191b19;
+  --card2: #202320;
+  --text: #f4f5f2;
+  --muted: #a4aaa2;
+  --accent: #b8ed68;
+  --border: #303530;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  padding: 28px 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner,
+main,
+footer {
+  width: min(860px, 100%);
+  margin: auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: #141710;
+  border-radius: 14px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.brand-caption {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(32px, 6vw, 49px);
+  letter-spacing: -2px;
+  line-height: 1.12;
+  margin: 12px 0;
+}
+
+.intro {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 16px;
+  margin: 18px 0 30px;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px 0 28px;
+}
+
+.meta-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 13px;
+  min-width: 0;
+}
+
+.meta-label {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.meta-value {
+  display: block;
+  font-size: 13px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--muted);
+  padding: 13px 10px;
+  font-size: 14px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #161a12;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+main {
+  padding: 0 20px 55px;
+}
+
+.panel {
+  display: none;
+  padding-top: 15px;
+}
+
+.panel.active {
+  display: block;
+  animation: appear .22s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.summary {
+  padding: 20px;
+  margin: 12px 0 26px;
+  background: #1d2518;
+  border: 1px solid #38452b;
+  border-radius: 15px;
+}
+
+.summary strong {
+  color: var(--accent);
+}
+
+h2 {
+  margin: 34px 0 10px;
+  font-size: 21px;
+  letter-spacing: -.5px;
+  line-height: 1.35;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 20px 0 5px;
+}
+
+p {
+  margin: 8px 0 14px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin: 7px 0;
+}
+
+a {
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+
+.note {
+  padding: 15px 17px;
+  border-left: 3px solid var(--accent);
+  background: var(--card);
+  border-radius: 0 10px 10px 0;
+  margin: 18px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 35px 0;
+}
+
+footer {
+  padding: 25px 20px 40px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+footer strong {
+  color: var(--text);
+}
+
+footer a {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 22px 16px 0;
+  }
+
+  main {
+    padding: 0 16px 40px;
+  }
+
+  .meta {
+    grid-template-columns: 1fr;
+  }
+
+  .meta-item {
+    padding: 10px 13px;
+  }
+
+  .tabs {
+    padding: 12px 0;
+  }
+
+  .tab {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="logo">F</div>
+      <div>
+        <div class="brand-name">FatFit</div>
+        <span class="brand-caption">Salud · Entrenamiento · Progreso</span>
+      </div>
+    </div>
+
+    <div class="eyebrow">FatFit · Legales</div>
+
+    <h1>Privacidad y<br>términos de uso.</h1>
+
+    <p class="intro">
+      FatFit está diseñada para guardar tus registros en tu teléfono,
+      sin necesidad de una cuenta. Acá explicamos qué información se
+      almacena, qué funciones pueden comunicarse con servicios externos
+      y cuáles son las condiciones de uso.
+    </p>
+
+    <div class="meta">
+      <div class="meta-item">
+        <span class="meta-label">Versión</span>
+        <span class="meta-value">2026-10-09.1</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Responsable</span>
+        <span class="meta-value">Federico Sosa · Uruguay</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Contacto</span>
+        <span class="meta-value">fsosa2001book@gmail.com</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <nav class="tabs" aria-label="Documentos legales">
+    <button class="tab active" id="privacy-tab"
+      aria-controls="privacy" aria-selected="true"
+      onclick="showPanel('privacy')">
+      Privacidad
+    </button>
+
+    <button class="tab" id="terms-tab"
+      aria-controls="terms" aria-selected="false"
+      onclick="showPanel('terms')">
+      Términos de uso
+    </button>
+  </nav>
+
+  <!-- POLÍTICA DE PRIVACIDAD -->
+
+  <section class="panel active" id="privacy">
+    <div class="summary">
+      <strong>En pocas palabras</strong>
+      <p>
+        FatFit no necesita una cuenta ni un correo electrónico para
+        funcionar. Tus registros se guardan en el teléfono y no se
+        envían automáticamente a servidores propios del desarrollador.
+        Algunas funciones opcionales sí se comunican con servicios
+        externos cuando las utilizás.
+      </p>
+    </div>
+
+    <h2>1. Quién es responsable</h2>
+    <p>
+      FatFit es desarrollada por Federico Sosa, desde Uruguay.
+      Para consultas sobre privacidad, podés escribir a
+      <a href="mailto:fsosa2001book@gmail.com">fsosa2001book@gmail.com</a>.
+    </p>
+    <p>
+      Como regla general, el desarrollador no tiene acceso a los datos
+      almacenados únicamente en tu teléfono.
+    </p>
+
+    <h2>2. Qué información guarda FatFit</h2>
+
+    <h3>Perfil y objetivos</h3>
+    <p>
+      Nombre, fecha de nacimiento, sexo, altura, peso y objetivo.
+      Se utilizan para calcular estimaciones, mostrar el progreso
+      y ajustar las metas que aparecen en la aplicación.
+    </p>
+
+    <h3>Entrenamiento y actividad</h3>
+    <p>
+      Experiencia, días de entrenamiento, lugar de entrenamiento,
+      nivel de actividad, ejercicios, series, rutinas y cambios
+      planificados. Esta información se utiliza para organizar
+      las rutinas y mostrar tu evolución.
+    </p>
+
+    <h3>Registros personales</h3>
+    <p>
+      Comidas, agua, pasos, sueño, medidas corporales, fotografías,
+      entrenamientos, recetas, listas de compras y planes diarios.
+      Estos datos constituyen el contenido que registrás en FatFit.
+    </p>
+
+    <h3>Información sobre grupos musculares</h3>
+    <p>
+      Si utilizás el mapa muscular, podés indicar si un grupo muscular
+      está fresco, recuperado, en recuperación o fatigado.
+      También podés marcar zonas del cuerpo que querés cuidar.
+      Son datos relacionados con la salud y se guardan localmente.
+      Se utilizan para mostrar el mapa y sugerir ajustes generales
+      en las rutinas.
+    </p>
+
+    <h3>Ubicación</h3>
+    <p>
+      Si iniciás una actividad al aire libre utilizando la función
+      «Con GPS», la aplicación utiliza la ubicación para medir
+      distancias y registrar el recorrido durante esa actividad.
+      No se utiliza en segundo plano fuera de esa sesión de GPS.
+    </p>
+
+    <h2>3. Dónde se almacenan los datos</h2>
+    <p>
+      Los registros se guardan en el almacenamiento local de la
+      aplicación y en las carpetas del dispositivo que correspondan
+      a las fotografías.
+    </p>
+    <p>
+      Los datos permanecen en tu teléfono mientras no exportes una
+      copia ni configures voluntariamente un servidor propio.
+      El acceso también depende de la seguridad y del bloqueo
+      de tu dispositivo.
+    </p>
+
+    <h2>4. Permisos del dispositivo</h2>
+
+    <h3>Health Connect</h3>
+    <p>
+      Si concedés permiso, FatFit puede leer pasos, distancia,
+      sueño y sesiones de ejercicio mediante Health Connect.
+      La aplicación utiliza estos datos para mostrar tu actividad,
+      tus objetivos y tus rachas. FatFit no escribe datos en
+      Health Connect.
+    </p>
+    <p>
+      Los datos leídos de Health Connect no se utilizan para
+      publicidad ni se venden. Permanecen en el dispositivo,
+      salvo cuando vos decidís exportar una copia.
+    </p>
+
+    <h3>Ubicación</h3>
+    <p>
+      Se utiliza para registrar el recorrido durante una sesión
+      de cardio iniciada con la opción «Con GPS».
+    </p>
+
+    <h3>Notificaciones y modo No molestar</h3>
+    <p>
+      Las notificaciones locales se utilizan para recordatorios
+      y para avisar cuando termina un descanso. Si activás la
+      función correspondiente, FatFit también puede solicitar
+      permiso para silenciar el teléfono durante un entrenamiento.
+    </p>
+
+    <h3>Cámara y galería</h3>
+    <p>
+      Se utilizan cuando elegís sacar una fotografía o seleccionar
+      una imagen para incorporarla a la aplicación.
+    </p>
+
+    <h2>5. Servicios externos y conexiones opcionales</h2>
+
+    <h3>Actualizaciones de la aplicación</h3>
+    <p>
+      FatFit puede consultar a Expo y EAS Update si hay una
+      actualización disponible. Durante esta consulta se puede
+      transmitir la versión de la aplicación, el sistema operativo
+      y un identificador de instalación generado aleatoriamente.
+      Esta información se utiliza para gestionar las actualizaciones.
+      No incluye automáticamente los registros personales de FatFit.
+    </p>
+
+    <h3>Recetas creadas con inteligencia artificial</h3>
+    <p>
+      Si la función está disponible y tocás «Crear con IA»,
+      el texto o la fotografía que elijas para esa solicitud
+      puede enviarse al servidor configurado para la función y
+      posteriormente al servicio de Claude, de Anthropic, para
+      obtener ingredientes, instrucciones y estimaciones nutricionales.
+    </p>
+    <p>
+      Esta operación depende de la configuración del servicio.
+      El tratamiento de la información por parte de Anthropic
+      se rige también por sus propias condiciones y políticas.
+    </p>
+
+    <h3>Búsqueda de recetas y alimentos</h3>
+    <p>
+      Si utilizás la búsqueda de recetas o alimentos de internet,
+      el texto de búsqueda y los identificadores de los elementos
+      consultados pueden enviarse a Spoonacular para obtener
+      recetas, ingredientes y estimaciones nutricionales.
+      Las fotografías de esos resultados pueden cargarse desde
+      sus servidores.
+    </p>
+    <p>
+      Las respuestas pueden almacenarse temporalmente en la
+      memoria del dispositivo para evitar solicitudes repetidas.
+      El tratamiento que realice Spoonacular está sujeto a sus
+      propias condiciones.
+    </p>
+
+    <h3>Traducción de recetas</h3>
+    <p>
+      FatFit puede utilizar ML Kit de Google para traducir recetas
+      en el dispositivo. El modelo de traducción puede descargarse
+      de Google la primera vez que se solicita. Una vez disponible,
+      la traducción se realiza localmente.
+    </p>
+
+    <h3>Publicidad</h3>
+    <p>
+      La aplicación puede mostrar espacios publicitarios con
+      contenido propio o proporcionado por anunciantes.
+      La versión descrita en esta política no utiliza SDK
+      publicitarios ni SDK de analítica para rastrear al usuario.
+      La publicidad no debe utilizar los registros personales
+      de FatFit para realizar seguimiento.
+    </p>
+
+    <h2>6. Informes de errores y diagnósticos</h2>
+    <p>
+      FatFit puede detectar errores para permitir que el usuario
+      revise un informe y decida si desea compartirlo.
+      Los informes no se envían automáticamente al desarrollador
+      mediante la función de correo.
+    </p>
+    <p>
+      Si elegís informar de un problema desde Ajustes, se puede
+      abrir tu aplicación de correo con información técnica como
+      la versión de FatFit, el modelo del teléfono, el sistema
+      operativo, el idioma y los errores registrados. Podés revisar
+      el mensaje antes de enviarlo. El informe no incluye tus
+      registros de peso, comidas ni fotografías personales.
+    </p>
+    <p>
+      Android y Google Play pueden recopilar información sobre
+      fallos y rendimiento conforme a su configuración y sus
+      propias políticas.
+    </p>
+    <p>
+      Las herramientas de diagnóstico para desarrolladores no
+      se muestran en la versión normal de la tienda, salvo que
+      se activen expresamente. Si decidís compartir un informe
+      avanzado, este puede incluir datos técnicos adicionales
+      y ciertos ajustes de la aplicación. Las claves guardadas
+      no deben incluirse en el informe.
+    </p>
+
+    <h2>7. Copias de seguridad y exportación</h2>
+    <p>
+      La función «Exportar» crea un archivo con tus datos y
+      fotografías para que lo guardes donde prefieras.
+      El archivo exportado no está cifrado. Guardalo en un
+      lugar de confianza.
+    </p>
+    <p>
+      La configuración de un servidor propio es opcional y
+      avanzada. Si decidís configurarlo, la información enviada
+      a ese servidor estará sujeta a la configuración y seguridad
+      del servidor que hayas instalado.
+    </p>
+
+    <h2>8. Cuánto tiempo se conservan los datos</h2>
+    <p>
+      Los datos locales permanecen en el teléfono hasta que
+      los borres o desinstales la aplicación. El desarrollador
+      no guarda copias de esos registros en servidores propios
+      como parte del funcionamiento local de FatFit.
+    </p>
+    <p>
+      Los archivos exportados y las copias de seguridad que
+      guardes fuera de la aplicación tienen sus propias condiciones
+      de almacenamiento.
+    </p>
+
+    <h2>9. Tus derechos y control de la información</h2>
+    <ul>
+      <li>
+        <strong>Consultar y exportar:</strong> podés acceder a tus
+        registros y utilizar Ajustes → Datos y respaldo → Exportar
+        para obtener una copia.
+      </li>
+      <li>
+        <strong>Corregir:</strong> podés editar los datos desde
+        las funciones correspondientes de la aplicación.
+      </li>
+      <li>
+        <strong>Eliminar:</strong> podés utilizar Ajustes → Datos
+        y respaldo → «Borrar todos mis datos».
+      </li>
+    </ul>
+    <p>
+      Si tenés una consulta o creés que no se respetan tus derechos,
+      escribí a
+      <a href="mailto:fsosa2001book@gmail.com">fsosa2001book@gmail.com</a>.
+      También podés recurrir a la Unidad Reguladora y de Control
+      de Datos Personales de Uruguay o a la autoridad competente
+      de tu país.
+    </p>
+
+    <h2>10. Eliminación de datos</h2>
+    <p>
+      La opción «Borrar todos mis datos» elimina del dispositivo
+      tu perfil, registros, fotografías y recorridos almacenados
+      por la aplicación. Si configuraste un servidor propio,
+      deberás gestionar también la eliminación de la copia
+      que se encuentre allí.
+    </p>
+    <p>
+      Desinstalar la aplicación elimina los datos locales
+      administrados por ella, sin perjuicio de las copias
+      que hayas exportado o que gestione el sistema operativo.
+    </p>
+
+    <h2>11. Menores de edad</h2>
+    <p>
+      Los usuarios menores de 13 años necesitan autorización
+      de su madre, padre o tutor para utilizar FatFit.
+      Para los usuarios menores de 18 años, la aplicación
+      no sugiere déficits calóricos para bajar de peso.
+    </p>
+
+    <h2>12. Cambios en la política</h2>
+    <p>
+      <strong>Versión:</strong> 2026-10-09.1.
+      Si cambia de forma importante el tratamiento de los datos,
+      la aplicación puede informar al usuario y solicitarle
+      que acepte la nueva versión antes de continuar.
+    </p>
+  </section>
+
+  <!-- TÉRMINOS DE USO -->
+
+  <section class="panel" id="terms">
+    <div class="summary">
+      <strong>Antes de usar FatFit</strong>
+      <p>
+        FatFit te ayuda a registrar entrenamientos, comidas
+        y hábitos. Sus cálculos y sugerencias son orientativos
+        y no sustituyen la evaluación de un profesional de la salud.
+      </p>
+    </div>
+
+    <h2>1. Qué es FatFit y cómo se aceptan estos términos</h2>
+    <p>
+      FatFit es una aplicación para registrar entrenamientos,
+      comidas y hábitos, y consultar el progreso personal.
+      Al utilizarla, aceptás estos términos y la política
+      de privacidad. Si no estás de acuerdo, no utilices
+      la aplicación.
+    </p>
+
+    <h2>2. Sin cuenta: tus datos viven en tu teléfono</h2>
+    <p>
+      No necesitás crear una cuenta ni proporcionar un correo
+      electrónico para utilizar las funciones locales.
+      Los registros se almacenan en el teléfono.
+    </p>
+    <p>
+      Es tu responsabilidad realizar copias de seguridad.
+      FatFit ofrece una función de exportación, pero si perdés
+      el teléfono o desinstalás la aplicación sin guardar una
+      copia, podrías perder los datos y no sería posible
+      recuperarlos desde el desarrollador.
+    </p>
+
+    <h2>3. FatFit no es un servicio médico</h2>
+    <p>
+      Las calorías, los macronutrientes, las rutinas,
+      las sugerencias y las observaciones son estimaciones
+      y reglas generales basadas en la información disponible.
+      No reemplazan la orientación de un médico, nutricionista
+      ni entrenador.
+    </p>
+    <p>
+      Si tenés una condición de salud, una lesión, estás
+      embarazada o tomás medicación, consultá con un profesional
+      antes de entrenar o cambiar tu alimentación.
+    </p>
+    <p>
+      Detené el ejercicio si sentís dolor, mareo, falta de aire
+      u otro malestar. FatFit no puede conocer directamente
+      cómo te sentís ni garantizar resultados físicos.
+    </p>
+
+    <h2>4. Entrenamientos y rutinas</h2>
+    <p>
+      Las sugerencias sobre zonas del cuerpo que conviene cuidar
+      son orientativas y se basan en reglas generales sobre
+      movimientos. No constituyen diagnósticos ni tratamientos.
+    </p>
+    <p>
+      Si tenés dolor o una lesión, consultá a un médico o
+      kinesiólogo antes de entrenar esa zona. Si un ejercicio
+      te duele, detenelo.
+    </p>
+    <p>
+      Las rutinas prediseñadas, las propuestas de entrenamiento,
+      las progresiones y las indicaciones de los personajes
+      acompañantes son guías generales. No equivalen a un plan
+      individual elaborado por un profesional.
+    </p>
+    <p>
+      El mapa muscular refleja lo que marcás o puede presentar
+      sugerencias sencillas según tu historial de entrenamiento.
+      No mide directamente tu recuperación, tu sueño ni tu
+      estado físico real.
+    </p>
+    <p>
+      Las calorías estimadas de una sesión se calculan utilizando
+      valores de referencia, como peso, duración y tipo de actividad.
+      Pueden diferir de las calorías realmente gastadas.
+    </p>
+    <p>
+      Elegí cargas y ejercicios apropiados, utilizá una técnica
+      correcta y equipo en buen estado y buscá supervisión cuando
+      sea necesario. El ejercicio físico tiene riesgos.
+    </p>
+
+    <h2>5. Nutrición</h2>
+    <p>
+      Las calorías y los macronutrientes que muestra FatFit son
+      promedios o estimaciones de referencia y no constituyen
+      un plan alimentario profesional.
+    </p>
+    <p>
+      Las recetas procesadas mediante inteligencia artificial
+      pueden contener errores en ingredientes, cantidades,
+      instrucciones y estimaciones calóricas. Revisá los resultados
+      antes de guardarlos o utilizarlos.
+    </p>
+    <p>
+      Si tenés o tuviste un trastorno de la conducta alimentaria,
+      diabetes u otra condición de salud, consultá a un profesional
+      antes de seguir objetivos calóricos o realizar cambios
+      importantes en tu alimentación.
+    </p>
+
+    <h2>6. Uso permitido</h2>
+    <p>
+      FatFit está destinada al uso personal. No la utilices
+      para perjudicar a otras personas, intentar vulnerar
+      su seguridad, modificarla de forma no autorizada ni
+      compartir contenido ilegal u ofensivo mediante sus funciones.
+    </p>
+
+    <h2>7. Tu contenido</h2>
+    <p>
+      Tus datos, fotografías y rutinas personales siguen siendo
+      tuyos. Podés exportarlos o eliminarlos utilizando las
+      herramientas disponibles en la aplicación.
+    </p>
+    <p>
+      Si compartís una rutina o una dieta, decidís qué información
+      enviar y a quién. Una vez compartido, el contenido queda
+      fuera del control de FatFit. No compartas datos de otras
+      personas sin su permiso.
+    </p>
+
+    <h2>8. Contenido de terceros</h2>
+    <p>
+      Las rutinas y dietas que importes pueden pertenecer a sus
+      respectivos creadores. FatFit puede mostrar una vista previa
+      antes de importarlas, pero no garantiza la exactitud ni
+      la idoneidad de ese contenido.
+    </p>
+    <p>
+      Las recetas procedentes de internet pertenecen a sus autores
+      y a los sitios que las publicaron. FatFit puede mostrarlas
+      a través de Spoonacular, junto con un enlace a la receta
+      original. Las traducciones automáticas pueden contener errores.
+    </p>
+
+    <h2>9. Propiedad intelectual y licencias</h2>
+    <p>
+      El diseño, los textos, las ilustraciones de ejercicios,
+      los personajes, los iconos y los sonidos propios de FatFit
+      pertenecen a sus respectivos titulares.
+    </p>
+    <p>
+      Los textos descriptivos de determinados ejercicios se
+      basan en free-exercise-db y exercises-dataset, publicados
+      bajo licencia MIT.
+    </p>
+    <p>
+      Las fotografías de alimentos y recetas pueden proceder
+      de Wikimedia Commons, bajo licencias como CC0, dominio
+      público, CC BY o CC BY-SA. La atribución y los enlaces
+      correspondientes deben consultarse en la sección
+      de licencias de la aplicación.
+    </p>
+    <p>
+      Las bibliotecas, fuentes y demás recursos de terceros
+      se utilizan de acuerdo con sus licencias. No copies,
+      vendas ni redistribuyas FatFit o sus componentes salvo
+      cuando las licencias aplicables lo permitan.
+    </p>
+
+    <h2>10. Privacidad</h2>
+    <p>
+      La política de privacidad forma parte de estos términos
+      y explica cómo se almacenan los datos, qué funciones
+      pueden utilizar servicios externos y cómo podés controlar
+      o eliminar tu información.
+    </p>
+
+    <h2>11. Precio, compras y publicidad</h2>
+    <p>
+      Las funciones principales de FatFit, como registrar,
+      entrenar, llevar el control de las comidas y consultar
+      el progreso y las rachas, están previstas como gratuitas.
+    </p>
+    <p>
+      Algunos personajes acompañantes pueden ofrecerse como
+      contenido digital opcional mediante un pago único dentro
+      de la aplicación. La disponibilidad y el precio se mostrarán
+      antes de la compra, si esta función se habilita.
+    </p>
+    <p>
+      Las compras gestionadas mediante Google Play están sujetas
+      a sus condiciones de pago, comprobantes y reembolsos.
+      FatFit no necesita ver ni almacenar los datos de tu tarjeta
+      para ofrecer contenido digital mediante esa plataforma.
+    </p>
+    <p>
+      La aplicación puede incluir espacios publicitarios
+      identificados como publicidad. La ubicación y disponibilidad
+      de esos espacios pueden cambiar según la versión.
+      Los productos y servicios anunciados son responsabilidad
+      de sus respectivos anunciantes.
+    </p>
+
+    <h2>12. Cambios, actualizaciones y disponibilidad</h2>
+    <p>
+      FatFit puede recibir actualizaciones para corregir errores,
+      mejorar funciones o incorporar características nuevas.
+      Algunas funciones pueden modificarse o dejar de estar
+      disponibles. Los cambios importantes se comunicarán
+      cuando corresponda.
+    </p>
+    <p>
+      Los datos guardados localmente permanecen bajo tu control
+      aunque la aplicación deje de actualizarse o de ofrecerse,
+      siempre que sigan almacenados en el dispositivo y no
+      hayan sido eliminados.
+    </p>
+
+    <h2>13. Dejar de utilizar FatFit</h2>
+    <p>
+      Podés dejar de utilizar FatFit cuando quieras.
+      No hay una cuenta que tengas que cerrar.
+      Podés borrar los datos desde los ajustes de la aplicación
+      y desinstalarla de tu dispositivo.
+    </p>
+    <p>
+      El desarrollador puede dejar de ofrecer la aplicación
+      o de proporcionar soporte.
+    </p>
+
+    <h2>14. Garantías y responsabilidad</h2>
+    <p>
+      FatFit se ofrece tal cual. Se realizan esfuerzos para
+      mantenerla funcionando correctamente, pero no se garantiza
+      que esté libre de errores ni que produzca un resultado
+      específico.
+    </p>
+    <p>
+      En la medida permitida por la legislación aplicable,
+      el desarrollador no asume responsabilidad por lesiones,
+      problemas de salud, daños o pérdidas de datos derivados
+      del uso de la aplicación. Nada de lo indicado limita
+      los derechos que la ley reconoce a los consumidores
+      y que no puedan renunciarse.
+    </p>
+
+    <h2>15. Ley aplicable</h2>
+    <p>
+      Estos términos se rigen por las leyes de la República
+      Oriental del Uruguay, sin perjuicio de los derechos
+      obligatorios que puedan corresponderte como consumidor
+      conforme a las leyes de tu país.
+    </p>
+
+    <h2>16. Contacto</h2>
+    <p>
+      Responsable: Federico Sosa, Uruguay.
+    </p>
+    <p>
+      Privacidad, soporte y consultas:
+      <a href="mailto:fsosa2001book@gmail.com">
+        fsosa2001book@gmail.com
+      </a>.
+    </p>
+
+    <h2>17. Cambios en los términos</h2>
+    <p>
+      Última actualización: 2026-10-09.1.
+      Si se realizan cambios importantes, FatFit puede informar
+      al usuario y solicitar que acepte la nueva versión antes
+      de continuar utilizando la aplicación.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <strong>FatFit</strong> · Política de privacidad y términos de uso
+  <br>
+  Última actualización: 9 de octubre de 2026
+  <br>
+  <a href="mailto:fsosa2001book@gmail.com">
+    Contactar al responsable
+  </a>
+</footer>
+
+<script>
+function showPanel(id) {
+  document.querySelectorAll('.panel').forEach(panel => {
+    panel.classList.toggle('active', panel.id === id);
+  });
+
+  document.querySelectorAll('.tab').forEach(tab => {
+    const selected = tab.id === id + '-tab';
+    tab.classList.toggle('active', selected);
+    tab.setAttribute('aria-selected', String(selected));
+  });
+
+  if (history.replaceState) {
+    history.replaceState(null, '', '#' + id);
+  }
+}
+
+const initialPanel = location.hash.replace('#', '');
+if (initialPanel === 'terms' || initialPanel === 'privacy') {
+  showPanel(initialPanel);
+}
+</script>
+
+</body>
+</html>
